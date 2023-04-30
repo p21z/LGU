@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.1" type="plugin" group="solidres" method="upgrade">
+    <name>plg_solidres_api</name>
+    <author>Solidres</author>
+    <creationDate>Apr 2023</creationDate>
+    <copyright>Copyright (C) 2013 Solidres. All rights reserved.</copyright>
+    <license>GNU General Public License version 3, or later</license>
+    <authorEmail>contact@solidres.com</authorEmail>
+    <authorUrl>https://www.solidres.com</authorUrl>
+    <version>2.13.3</version>
+    <description>PLG_SOLIDRES_API_XML_DESCRIPTION</description>
+    <scriptfile>solidres.scriptfile.php</scriptfile>
+    <files>
+        <filename plugin="api">api.php</filename>
+        <folder>api-dist</folder>
+        <folder>components</folder>
+        <folder>language</folder>
+    </files>
+</extension>

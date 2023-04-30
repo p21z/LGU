@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    <fieldset
+            name="account"
+            addfieldpath="/administrator/components/com_solidres/models/fields"
+    >
+        <field
+                name="username"
+                type="text"
+                class="inputbox"
+                description="SR_FIELD_CUSTOMER_USERNAME_DESC"
+                label="SR_FIELD_CUSTOMER_USERNAME"
+                required="true"
+        />
+
+        <field
+                name="password"
+                type="password"
+                autocomplete="off"
+                class="inputbox"
+                description="SR_FIELD_CUSTOMER_PASSWORD_DESC"
+                filter="raw"
+                label="SR_FIELD_CUSTOMER_PASSWORD"
+                labelclass="control-label"
+        />
+
+        <field
+                name="password2"
+                type="password"
+                autocomplete="off"
+                class="inputbox"
+                description="SR_FIELD_CUSTOMER_PASSWORD2_DESC"
+                filter="raw"
+                label="SR_FIELD_CUSTOMER_PASSWORD2"
+        />
+
+        <field
+                name="email"
+                type="email"
+                class="inputbox"
+                description="SR_FIELD_CUSTOMER_EMAIL_DESC"
+                label="SR_FIELD_CUSTOMER_EMAIL"
+                required="true"
+                validate="email"
+        />
+
+        <field name="groups" type="hidden"/>
+        <field name="user_id" type="hidden"/>
+        <field name="id" type="hidden"/>
+        <field
+                name="customer_code"
+                type="hidden"
+                class="inputbox"
+                default=""
+                label="SR_CUSTOMER_CODE_LABEL"
+                description="SR_CUSTOMER_CODE_DESC"
+        />
+        <field
+                name="customer_group_id"
+                type="customergroup"
+                default=""
+                label="SR_CUSTOMER_GROUP_ID_LABEL"
+                description="SR_CUSTOMER_GROUP_ID_DESC"
+        />
+
+    </fieldset>
+
+    <fieldset name="fields">
+        <field
+                name="firstname"
+                type="text"
+                default=""
+                class="inputbox"
+                required="true"
+                label="SR_FIELD_CUSTOMER_FIRSTNAME_LABEL"
+                description="SR_FIELD_CUSTOMER_FIRSTNAME_DESC"
+        />
+
+        <field
+                name="middlename"
+                type="text"
+                default=""
+                class="inputbox"
+                label="SR_FIELD_CUSTOMER_MIDDLENAME_LABEL"
+                description="SR_FIELD_CUSTOMER_MIDDLENAME_DESC"
+                labelclass="control-label"/>
+
+        <field
+                name="lastname"
+                type="text"
+                default=""
+                class="inputbox"
+                required="true"
+                label="SR_FIELD_CUSTOMER_LASTNAME_LABEL"
+                description="SR_FIELD_CUSTOMER_LASTNAME_DESC"
+        />
+
+        <field name="vat_number"
+               type="text"
+               default=""
+               class="inputbox"
+               label="SR_FIELD_CUSTOMER_VATNUMBER_LABEL"
+               description="SR_FIELD_CUSTOMER_VATNUMBER_DESC"
+        />
+
+        <field name="company"
+               type="text"
+               default=""
+               class="inputbox"
+               label="SR_FIELD_CUSTOMER_COMPANY_LABEL"
+               description="SR_FIELD_CUSTOMER_COMPANY_DESC"
+        />
+
+        <field
+                name="phonenumber"
+                type="text"
+                default=""
+                class="inputbox"
+                label="SR_FIELD_CUSTOMER_PHONENUMBER_LABEL"
+                description="SR_FIELD_CUSTOMER_PHONENUMBER_DESC"
+        />
+
+        <field
+                name="mobilephone"
+                type="text"
+                default=""
+                class="inputbox"
+                label="SR_FIELD_CUSTOMER_MOBILEPHONE_LABEL"
+                description="SR_FIELD_CUSTOMER_MOBILEPHONE_DESC"
+        />
+
+        <field name="address1"
+               type="text"
+               default=""
+               class="inputbox"
+               label="SR_FIELD_CUSTOMER_ADDRESS1_LABEL"
+               description="SR_FIELD_CUSTOMER_ADDRESS1_DESC"
+        />
+
+        <field
+                name="address2"
+                type="text"
+                default=""
+                class="inputbox"
+                label="SR_FIELD_CUSTOMER_ADDRESS2_LABEL"
+                description="SR_FIELD_CUSTOMER_ADDRESS2_DESC"
+        />
+
+        <field
+                name="city"
+                type="text"
+                default=""
+                class="inputbox"
+                label="SR_FIELD_CUSTOMER_CITY_LABEL"
+                description="SR_FIELD_CUSTOMER_CITY_DESC"
+        />
+
+        <field
+                name="zipcode"
+                type="text"
+                default=""
+                class="inputbox"
+                label="SR_FIELD_CUSTOMER_ZIPCODE_LABEL"
+                description="SR_FIELD_CUSTOMER_ZIPCODE_DESC"
+        />
+
+        <field
+                name="geo_state_id"
+                type="geostate"
+                label="SR_FIELD_CUSTOMER_GEO_STATE_LABEL"
+                description="SR_FIELD_CUSTOMER_GEO_STATE_DESC"
+                class="state_select"
+        />
+
+        <field
+                name="country_id"
+                type="country"
+                label="SR_FIELD_CUSTOMER_COUNTRY_LABEL"
+                description="SR_FIELD_CUSTOMER_COUNTRY_DESC"
+                class="country_select"
+                default="0"
+                required="true"
+        />
+
+    </fieldset>
+
+    <fieldset name="api" label="SR_API_KEYS_LABEL" description="SR_API_KEYS_NOTICES"
+              addfieldpath="/plugins/user/solidres/administrator/components/com_solidres/models/fields">
+
+        <field
+                name="api_key"
+                type="api"
+                label="SR_API_KEY_LABEL"
+                description="SR_API_KEY_DESC"
+        />
+        <field
+                name="api_secret"
+                type="api"
+                label="SR_API_SECRET_LABEL"
+                description="SR_API_SECRET_DESC"
+        />
+    </fieldset>
+</form>

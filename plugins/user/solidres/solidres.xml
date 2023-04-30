@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.1" type="plugin" group="user" method="upgrade">
+	<name>plg_user_solidres</name>
+	<author>Solidres</author>
+	<creationDate>Apr 2023</creationDate>
+	<copyright>Copyright (C) 2013 Solidres. All rights reserved.</copyright>
+	<license>GNU General Public License version 3, or later</license>
+	<authorEmail>contact@solidres.com</authorEmail>
+	<authorUrl>https://www.solidres.com</authorUrl>
+	<version>2.13.3</version>
+	<description>PLG_USER_SOLIDRES_XML_DESCRIPTION</description>
+
+	<scriptfile>solidres.scriptfile.php</scriptfile>
+
+	<files>
+		<filename plugin="solidres">solidres.php</filename>
+		<filename>checksums</filename>
+		<folder>administrator</folder>
+		<folder>components</folder>
+        <folder>language</folder>
+	</files>
+</extension>

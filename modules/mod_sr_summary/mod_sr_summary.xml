@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extension
+        type="module"
+        version="3.0"
+        client="site"
+        method="upgrade">
+    <name>mod_sr_summary</name>
+    <creationDate>Apr 2023</creationDate>
+    <author>Solidres</author>
+    <authorEmail>contact@solidres.com</authorEmail>
+    <authorUrl>https://www.solidres.com</authorUrl>
+    <copyright>(C) 2013 - 2020 Solidres. All right reserved</copyright>
+    <license>GNU General Public License version 3, or later</license>
+    <version>2.13.3</version>
+    <description>MOD_SR_SUMMARY_XML_DESCRIPTION</description>
+    <files>
+        <filename module="mod_sr_summary">mod_sr_summary.php</filename>
+        <filename>mod_sr_summary.xml</filename>
+        <folder>tmpl</folder>
+        <folder>language</folder>
+    </files>
+    <config>
+        <fields name="params">
+            <fieldset
+                    name="basic"
+                    addfieldpath="/administrator/components/com_solidres/models/fields">
+                <field
+                        name="sidebar_identification"
+                        type="text"
+                        label="MOD_SR_SUMMARY_SIDEBAR_IDENTIFICATION_LABEL"
+                        description="MOD_SR_SUMMARY_SIDEBAR_IDENTIFICATION_DESC"/>
+            </fieldset>
+
+            <fieldset name="advanced">
+                <field
+                        name="layout"
+                        type="modulelayout"
+                        label="JFIELD_ALT_LAYOUT_LABEL"
+                        description="JFIELD_ALT_MODULE_LAYOUT_DESC"/>
+                <field
+                        name="moduleclass_sfx"
+                        type="textarea" rows="3"
+                        label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+                        description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC"/>
+
+                <field
+                        name="cache"
+                        type="list"
+                        default="0"
+                        label="COM_MODULES_FIELD_CACHING_LABEL"
+                        description="COM_MODULES_FIELD_CACHING_DESC">
+                    <option value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
+                </field>
+
+            </fieldset>
+        </fields>
+    </config>
+</extension>

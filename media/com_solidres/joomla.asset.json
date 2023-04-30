@@ -1,0 +1,49 @@
+{
+  "$schema": "https://developer.joomla.org/schemas/json-schema/web_assets.json",
+  "name": "com_solidres",
+  "version": "2.13.3",
+  "description": "SOLIDRES - Accommodation booking extension for Joomla!",
+  "license": "GPL-3.0-or-later",
+  "assets": [
+    {
+      "name": "com_solidres.field-customer",
+      "type": "script",
+      "uri": "com_solidres/assets/field-customer.min.js",
+      "dependencies": [],
+      "attributes": {
+        "type": "module"
+      },
+      "version": "2e6f6c2f3eed9b1fefbdf2207295c015a5938344"
+    },
+    {
+      "name": "com_solidres.inline-edit",
+      "type": "script",
+      "uri": "com_solidres/assets/inline-edit.min.js",
+      "version": "25e64aa754c310d45c1e084d574c1bb0"
+    },
+    {
+      "name": "com_solidres.leaflet-css",
+      "type": "style",
+      "uri": "com_solidres/assets/leaflet.min.css",
+      "version": "c4f1ef7b44a42831af35a8d1cd1519d7"
+    },
+    {
+      "name": "com_solidres.leaflet-search-css",
+      "type": "style",
+      "uri": "com_solidres/assets/leaflet-search.min.css",
+      "version": "c4f1ef7b44a42831af35a8d1cd1519d7"
+    },
+    {
+      "name": "com_solidres.leaflet-js",
+      "type": "script",
+      "uri": "com_solidres/assets/leaflet.min.js",
+      "version": "c4f1ef7b44a42831af35a8d1cd1519d7"
+    },
+    {
+      "name": "com_solidres.leaflet-search-js",
+      "type": "script",
+      "uri": "com_solidres/assets/leaflet-search.min.js",
+      "version": "c4f1ef7b44a42831af35a8d1cd1519d7"
+    }
+  ]
+}
